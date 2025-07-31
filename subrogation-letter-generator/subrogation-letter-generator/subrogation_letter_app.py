@@ -3,7 +3,7 @@ from docx import Document
 from datetime import datetime
 from io import BytesIO
 
-st.title("📄 Subrogation Cover Letter Generator")
+st.title("📄 DAN Subrogation/Coordination of Benefits Cover Letter Generator")
 
 st.markdown("Fill in the fields below to generate a professionally formatted subrogation letter as a downloadable Word document.")
 
@@ -23,7 +23,7 @@ include_claim_form = st.checkbox("Include completed claim form line")
 if st.button("Generate Letter"):
     doc = Document()
 
-    doc.add_paragraph("ALL AMERICAN LIFE Insurance Company\n\nSERVICES\n\n")
+    doc.add_paragraph("DAN Insurance Company\n\nSERVICES\n\n")
     doc.add_paragraph(datetime.today().strftime("%B %d, %Y"))
     doc.add_paragraph(f"{insurance_company}\nAttn: Coordination of Benefits\n{address_line1}\n{address_line2}")
     doc.add_paragraph("\nRE: Coordination of Benefits Request - Out-of-Country Emergency Medical Expense\n")
@@ -32,7 +32,7 @@ if st.button("Generate Letter"):
     doc.add_paragraph(f"Patient’s DOB: {dob.strftime('%m/%d/%Y')}")
     doc.add_paragraph(f"Type of Coverage: {coverage_type}")
     doc.add_paragraph(f"Date(s) of Service: {dates_of_service}")
-    doc.add_paragraph(f"Cigna Insured ID: {cigna_id}")
+    doc.add_paragraph(f"Primary Insurance Insured ID: {PrimaryInsurance_id}")
     doc.add_paragraph(
         "\nDear Sir/Madam,\n\n"
         "We have recently completed a review of claim expenses incurred and paid by our company that relate to the same loss "

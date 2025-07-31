@@ -61,7 +61,7 @@ if st.button("Generate Letter"):
     )
 
     doc.add_paragraph(
-        "Sincerely,\n\nAngelica Alfaro\nSubrogation Recovery Team\n\nEnclosures\n\n"
+        "Sincerely,\n\nAngelica Alfaro\nRecovery Team\n\nEnclosures\n\n"
         "DAN Claims ( 6 W Colony Place ( Durham, NC  ( 27705 ( USA\n"
         "Phone 1.919.493.0912 ( Fax 1.913.493.3040 ( Claims@dan.org\n"
         "DAN Services, Inc. is a for-profit Subsidiary of Divers Alert Network"

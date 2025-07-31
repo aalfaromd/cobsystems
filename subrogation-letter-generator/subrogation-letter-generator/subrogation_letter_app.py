@@ -3,6 +3,18 @@ from docx import Document
 from datetime import datetime
 from io import BytesIO
 
+# Set margins
+for section in doc.sections:
+    section.top_margin = Inches(1)
+    section.bottom_margin = Inches(1)
+    section.left_margin = Inches(1.25)
+    section.right_margin = Inches(1.25)
+
+# Add logo
+doc.add_picture("dan logo letter.png", width=Inches(1.5))
+
+
+
 st.title("📄 DAN Subrogation/Coordination of Benefits Cover Letter Generator")
 
 st.markdown("Fill in the fields below to generate a professionally formatted subrogation letter as a downloadable Word document.")

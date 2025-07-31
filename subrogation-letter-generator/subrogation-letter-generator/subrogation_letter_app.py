@@ -16,7 +16,7 @@ policy_number = st.text_input("DAN Policy/Member Number")
 dob = st.date_input("Patient’s Date of Birth")
 coverage_type = st.text_input("Type of Coverage")
 dates_of_service = st.text_input("Date(s) of Service")
-cigna_id = st.text_input("Cigna Insured ID")
+PrimaryIns_id = st.text_input("Primary Insurance ID")
 provider_payment_details = st.text_input("Provider Payment Details")
 include_claim_form = st.checkbox("Include completed claim form line")
 

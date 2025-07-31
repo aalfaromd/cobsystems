@@ -32,7 +32,7 @@ if st.button("Generate Letter"):
     doc.add_paragraph(f"Patient’s DOB: {dob.strftime('%m/%d/%Y')}")
     doc.add_paragraph(f"Type of Coverage: {coverage_type}")
     doc.add_paragraph(f"Date(s) of Service: {dates_of_service}")
-    doc.add_paragraph(f"Primary Insurance Insured ID: {PrimaryInsurance_id}")
+    doc.add_paragraph(f"Primary Insurance ID: {PrimaryIns_id}")
     doc.add_paragraph(
         "\nDear Sir/Madam,\n\n"
         "We have recently completed a review of claim expenses incurred and paid by our company that relate to the same loss "

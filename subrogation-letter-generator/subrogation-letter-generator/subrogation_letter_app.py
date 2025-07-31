@@ -25,7 +25,6 @@ if st.button("Generate Letter"):
     doc = Document()
 
     doc.add_paragraph("DAN Insurance Company\n\nSERVICES\n\n")
-    doc.add_picture("dan logo letter.png", width=Inches(1.5))
     doc.add_paragraph(datetime.today().strftime("%B %d, %Y"))
     doc.add_paragraph(f"{insurance_company}\nAttn: Coordination of Benefits\n{address_line1}\n{address_line2}")
     doc.add_paragraph("\nRE: Coordination of Benefits Request - Out-of-Country Emergency Medical Expense\n")
